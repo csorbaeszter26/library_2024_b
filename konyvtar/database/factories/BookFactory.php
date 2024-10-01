@@ -18,9 +18,9 @@ class BookFactory extends Factory
     public function definition(): array
     {
         return [
-            'author' => fake('hu_HU')->name(),
-            'title' => fake('hu_HU')->name(),
-            'pieces' => rand(0, 10),
+            'author' => fake('hu_HU')->name(), //random general neki nevet
+            'title' => fake('hu_HU')->sentence(), // random general neki szöveget
+            /*'pieces' => rand(0, 10),*/
         ];
     }
 }
